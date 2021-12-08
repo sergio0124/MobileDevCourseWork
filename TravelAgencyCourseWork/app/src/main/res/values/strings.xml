@@ -19,4 +19,8 @@
     <string name="GuidesString">Guides</string>
     <string name="PlacesString">Places</string>
     <string name="TripsString">Trips</string>
+
+    <string name="AddString">Add</string>
+    <string name="DeleteString">Delete</string>
+    <string name="RefactorString">Refactor</string>
 </resources>

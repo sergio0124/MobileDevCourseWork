@@ -4,6 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.TripsActivity">
+    tools:context="TripsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_margin="100px"
+            android:text="@string/TripsString"
+            android:textAlignment="center"
+            android:textSize="60px"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_margin="20px"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_margin="20px"
+                android:layout_weight="1"
+                android:onClick="buttonAdd_Click"
+                android:text="@string/AddString"></Button>
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_margin="20px"
+                android:layout_weight="1"
+                android:onClick="buttonDelete_Click"
+                android:text="@string/DeleteString"></Button>
+
+
+            <Button
+                android:id="@+id/buttonRefactor"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_margin="20px"
+                android:layout_weight="1"
+                android:onClick="buttonRefactor_Click"
+                android:text="@string/RefactorString"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
