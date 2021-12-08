@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Entry Window -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entry_windo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="200px"
+            android:layout_marginRight="150px"
+            android:text="@string/EntryString"
+            android:textAlignment="center"
+            android:textSize="10pt"></TextView>
+
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/LoginString">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:password="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/PasswordString">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:text="@string/EntryActionString"
+            android:onClick="buttonEntry_Click">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="100px"
+            android:text="@string/RegistrationString"
+            android:onClick="textViewRegistration_Click">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

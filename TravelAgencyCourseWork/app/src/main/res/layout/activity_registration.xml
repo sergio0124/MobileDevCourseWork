@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="200px"
+            android:layout_marginRight="150px"
+            android:text="@string/RegistrationString"
+            android:textAlignment="center"
+            android:textSize="10pt"></TextView>
+
+
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/TelephoneString"></EditText>
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/MailString"></EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/PasswordString"
+            android:password="true"></EditText>
+
+        <EditText
+            android:id="@+id/passwordrepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:hint="@string/PasswordString"
+            android:password="true"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ShareDataCheckBox"
+                android:layout_width="100px"
+                android:layout_height="match_parent"></CheckBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/UserAgreement"
+                android:layout_margin="20px"></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="100px"
+            android:text="@string/RegistrationActionString"
+            android:onClick="buttonRegister_Click"></Button>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

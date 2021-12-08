@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TravelAgencyCourseWork</string>
+    <string name="EntryString">Entry</string>
+    <string name="PasswordString">Password</string>
+    <string name="LoginString">Login</string>
+    <string name="EntryActionString">Log in</string>
+    <string name="RegistrationActionString">Register</string>
+    <string name="RegistrationString">Registration</string>
+
+    <string name="TelephoneString">Telephone</string>
+    <string name="MailString">EMail</string>
+    <string name="FIOString">FIO</string>
+
+    <string name="UserAgreement">I am agree to share data</string>
+    <string name="StringString">String</string>
+    <string name="MyTripsString">My trips</string>
+    <string name="AbstractName">Name</string>
+
+    <string name="GuidesString">Guides</string>
+    <string name="PlacesString">Places</string>
+    <string name="TripsString">Trips</string>
+</resources>
