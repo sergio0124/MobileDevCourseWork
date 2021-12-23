@@ -2,11 +2,11 @@ package com.travelagencycoursework.database.models;
 
 public class UserModel {
 
-    private int id;
+    private int id = 0;
     private String login;
     private String password;
 
-    public UserModel(String login,  String password){
+    public UserModel(String login, String password){
         this.login = login;
         this.password = password;
     }

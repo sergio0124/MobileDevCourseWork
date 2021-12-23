@@ -57,7 +57,10 @@ public class UserLogic {
 
     public UserModel getElement(UserModel model) {
         Cursor cursor = db.rawQuery("select * from " + TABLE + " where "
-                + COLUMN_ID + " = " + model.getId(), null);
+                + COLUMN_LOGIN + " = '" + model.getLogin()+"'", null);
+        if(cursor == null){
+            return null;
+        }
         UserModel obj = new UserModel();
         if (!cursor.moveToFirst()) {
             return null;
@@ -70,24 +73,27 @@ public class UserLogic {
 
     public void insert(UserModel model) {
         ContentValues content = new ContentValues();
-        content.put(COLUMN_LOGIN,model.getLogin());
-        content.put(COLUMN_PASSWORD,model.getPassword());
-        db.insert(TABLE,null,content);
+        content.put(COLUMN_LOGIN, model.getLogin());
+        content.put(COLUMN_PASSWORD, model.getPassword());
+        db.insert(TABLE, null, content);
     }
 
     public void update(UserModel model) {
-        ContentValues content=new ContentValues();
-        content.put(COLUMN_LOGIN,model.getLogin());
-        content.put(COLUMN_PASSWORD,model.getPassword());
+        ContentValues content = new ContentValues();
+        content.put(COLUMN_LOGIN, model.getLogin());
+        content.put(COLUMN_PASSWORD, model.getPassword());
         String where = COLUMN_ID + " = " + model.getId();
-        db.update(TABLE,content,where,null);
+        db.update(TABLE, content, where, null);
     }
 
     public void delete(UserModel model) {
-        String where = COLUMN_ID+" = "+model.getId();
-        db.delete(TABLE,where,null);
+        String where = COLUMN_ID + " = " + model.getId();
+        db.delete(TABLE, where, null);
         TripLogic customerLogic = new TripLogic(context);
         customerLogic.deleteByUserId(model.getId());
     }
 
+    public void deleteDatabase(Context context){
+        sqlHelper.deleteDatabase(context);
+    }
 }

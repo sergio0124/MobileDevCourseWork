@@ -2,30 +2,30 @@ package com.travelagencycoursework.database.models;
 
 public class PlaceModel {
     int id;
-    String description;
-    String address;
+    double price;
+    String name;
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getDescription() {
-        return description;
+    public double getPrice() {
+        return price;
     }
 
-    public String getAddress() {
-        return address;
+    public String getName() {
+        return name;
     }
 }

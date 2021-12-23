@@ -31,16 +31,6 @@
                 android:textAlignment="center"
                 android:textSize="10pt"></TextView>
 
-
-            <EditText
-                android:id="@+id/telephone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100px"
-                android:layout_marginTop="100px"
-                android:layout_marginRight="100px"
-                android:hint="@string/TelephoneString"></EditText>
-
             <EditText
                 android:id="@+id/mail"
                 android:layout_width="match_parent"
@@ -79,7 +69,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/ShareDataCheckBox"
+                    android:id="@+id/shareDataCheckBox"
                     android:layout_width="100px"
                     android:layout_height="match_parent"></CheckBox>
 

@@ -3,6 +3,15 @@ package com.travelagencycoursework.database.models;
 public class GuideModel {
     int id;
     String name;
+    double price;
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     public int getId() {
         return id;

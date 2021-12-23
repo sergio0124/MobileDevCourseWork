@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="@string/GuidesString"
+                android:textAlignment="center"
+                android:textSize="18sp">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/LoadStringActive">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="@string/GuideStringActive">
+
+                </Button>
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="100"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutPlaces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutGuides"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

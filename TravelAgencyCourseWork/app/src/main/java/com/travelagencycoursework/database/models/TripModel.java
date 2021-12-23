@@ -1,5 +1,7 @@
 package com.travelagencycoursework.database.models;
 
+import com.google.firebase.database.Exclude;
+
 import java.util.Calendar;
 
 public class TripModel {
@@ -8,19 +10,39 @@ public class TripModel {
     String name;
     int userId;
     String userLogin;
-    int guideId;
     String guideName;
-    int placeId;
     String placeName;
     Calendar date;
-    String userName;
+    double placePrice = 0;
+    double guidePrice = 0;
+    double price = 0;
 
-    public String getUserName() {
-        return userName;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public double getPlacePrice() {
+        return placePrice;
+    }
+
+    public double getGuidePrice() {
+        return guidePrice;
+    }
+
+    public double getPrice() {
+        if (price == 0) {
+            return placePrice + guidePrice;
+        } else {
+            return price;
+        }
+    }
+
+    public void setPlacePrice(double placePrice) {
+        this.placePrice = placePrice;
+    }
+
+    public void setGuidePrice(double guidePrice) {
+        this.guidePrice = guidePrice;
     }
 
     public void setId(int id) {
@@ -31,10 +53,12 @@ public class TripModel {
         return id;
     }
 
+    @Exclude
     public Calendar getDate() {
         return date;
     }
 
+    @Exclude
     public void setDate(Calendar date) {
         this.date = date;
     }
@@ -51,16 +75,8 @@ public class TripModel {
         return userLogin;
     }
 
-    public int getGuideId() {
-        return guideId;
-    }
-
     public String getGuideName() {
         return guideName;
-    }
-
-    public int getPlaceId() {
-        return placeId;
     }
 
     public String getPlaceName() {
@@ -79,16 +95,8 @@ public class TripModel {
         this.userLogin = userLogin;
     }
 
-    public void setGuideId(int guideId) {
-        this.guideId = guideId;
-    }
-
     public void setGuideName(String guideName) {
         this.guideName = guideName;
-    }
-
-    public void setPlaceId(int placeId) {
-        this.placeId = placeId;
     }
 
     public void setPlaceName(String placeName) {

@@ -24,12 +24,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE trip (\n" +
                 "    id integer PRIMARY KEY AUTOINCREMENT,\n" +
                 "    name character(100) NOT NULL,\n" +
-                "    guideName character(100) NOT NULL,\n" +
-                "    placeName character(100) NOT NULL,\n" +
-                "    guideId integer NOT NULL,\n" +
-                "    placeId integer NOT NULL,\n" +
+                "    guidename character(100) NOT NULL,\n" +
+                "    placename character(100) NOT NULL,\n" +
+                "    price real NOT NULL,\n" +
                 "    date long NOT NULL,\n" +
-                "    userName character(100) NOT NULL,\n" +
+                "    username character(100) NOT NULL,\n" +
                 "    userid integer NOT NULL,\n" +
                 "    CONSTRAINT userfk FOREIGN KEY (userid)\n" +
                 "    REFERENCES user(id) ON DELETE CASCADE);");
@@ -40,5 +39,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion,  int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_NAME);
         onCreate(db);
+    }
+
+    public void deleteDatabase(Context context){
+        context.deleteDatabase(DATABASE_NAME);
     }
 }

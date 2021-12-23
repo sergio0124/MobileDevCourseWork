@@ -1,26 +1,49 @@
 <resources>
-    <string name="app_name">TravelAgencyCourseWork</string>
-    <string name="EntryString">Entry</string>
-    <string name="PasswordString">Password</string>
-    <string name="LoginString">Login</string>
-    <string name="EntryActionString">Log in</string>
-    <string name="RegistrationActionString">Register</string>
-    <string name="RegistrationString">Registration</string>
+    <string name="app_name">Туристическое агенство</string>
+    <string name="EntryString">Вход</string>
+    <string name="PasswordString">Пароль</string>
+    <string name="LoginString">Логин</string>
+    <string name="EntryActionString">Войти</string>
+    <string name="RegistrationActionString">Зарегистрироваться</string>
+    <string name="RegistrationString">Регистрация</string>
 
-    <string name="TelephoneString">Telephone</string>
-    <string name="MailString">EMail</string>
-    <string name="FIOString">FIO</string>
+    <string name="TelephoneString">Телефон</string>
+    <string name="MailString">Почта</string>
+    <string name="FIOString">ФИО</string>
 
-    <string name="UserAgreement">I am agree to share data</string>
-    <string name="StringString">String</string>
-    <string name="MyTripsString">My trips</string>
-    <string name="AbstractName">Name</string>
+    <string name="UserAgreement">Согласие на обработку данных</string>
+    <string name="StringString">Строка</string>
+    <string name="MyTripsString">Мои поездки</string>
+    <string name="AbstractName">Имя</string>
 
-    <string name="GuidesString">Guides</string>
-    <string name="PlacesString">Places</string>
-    <string name="TripsString">Trips</string>
+    <string name="GuidesString">Гиды</string>
+    <string name="PlacesString">Места</string>
+    <string name="TripsString">Поездки</string>
 
-    <string name="AddString">Add</string>
-    <string name="DeleteString">Delete</string>
-    <string name="RefactorString">Refactor</string>
+    <string name="AddString">Добавить</string>
+    <string name="DeleteString">Удалить</string>
+    <string name="RefactorString">Изменить</string>
+
+    <string name="CreateTripString">Создать новую поездку</string>
+
+    <string name="CreateActive">Создать</string>
+    <string name="DeleteActive">Удалить</string>
+    <string name="UpdateActive">Изменить</string>
+
+    <string name="NameString">Имя</string>
+    <string name="GuideString">Гид</string>
+    <string name="PlaceString">Место</string>
+    <string name="DateString">Дата</string>
+    <string name="PlaceStringActive">Добавить место</string>
+
+    <string name="SaveStringActive">Сохранить</string>
+    <string name="LoadStringActive">Загрузить</string>
+    <string name="GuideStringActive">Добавить гида</string>
+
+    <string name="ChooseDateAction">Выбрать дату</string>
+    <string name="ReportStringAction">Создать отчет</string>
+    <string name="DateTo">Дата с:</string>
+    <string name="DateFrom">Дата по:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

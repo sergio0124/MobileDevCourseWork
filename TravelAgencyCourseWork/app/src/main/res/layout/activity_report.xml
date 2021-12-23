@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ReportStringAction"
+            android:textAlignment="center"
+            android:textSize="18sp"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/DateFrom"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"></TextView>
+
+
+            <Button
+                android:id="@+id/button_datefrom"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/ChooseDateAction"></Button>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/DateTo"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"></TextView>
+
+
+            <Button
+                android:id="@+id/button_dateto"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/ChooseDateAction"></Button>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_create_report"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/ReportStringAction"></Button>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

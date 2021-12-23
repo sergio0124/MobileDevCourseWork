@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainTripFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:text="@string/NameString"
+                    android:textAlignment="center"
+                    android:textSize="18sp"></TextView>
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:text="@string/GuideString"
+                    android:textAlignment="center"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/guideTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp">
+
+                <TextView
+                    android:id="@+id/guidePriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_marginLeft="50px"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:text="@string/PlaceString"
+                    android:textAlignment="center"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/placeTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp">
+
+                <TextView
+                    android:id="@+id/placePriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:text="@string/DateString"
+                    android:textAlignment="center"
+                    android:textSize="18sp"></TextView>
+
+                <Button
+                    android:id="@+id/buttonDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50px"
+                    android:text="@string/ChooseDateAction"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="100px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:text="@string/GuideString" />
+
+                <Button
+                    android:id="@+id/button_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:text="@string/PlaceString" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="100px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:text="@string/SaveStringActive" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
